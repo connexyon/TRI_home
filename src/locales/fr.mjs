@@ -106,4 +106,40 @@ export default {
   cta_contact: `Contact`,
   cta_donate: `Faire un don`,
   footer_source: `Contenu et images : torahresourcesinternational.com`,
+
+  // ── Longs textes (traduction du texte anglais) ──
+  t3_more: `<p>Vous verrez quel était le dessein et l’intention originels de notre Père pour toute Sa création. Et vous apprendrez à vous connaître comme Son enfant – créé à l’image de notre Père. Cette compréhension plus profonde de Son dessein donne un aperçu de qui vous avez été créé pour être. Quel est notre but et comment avons-nous été créés pour voir les autres et le monde ?</p>
+<p>Ce récit a le pouvoir de provoquer un changement de paradigme pour vivre votre vie comme votre Créateur l’a voulu ~ au commencement . . .</p>
+<p>Disponible sur {a:torahtruths}torahtruths.com{/a} sous le titre « Sitting Rooms ».</p>`,
+  blue_more: `<p>Quelle est la signification biblique de ce bleu appelé en hébreu tekhelet, <span lang="he" dir="rtl">תכלת</span> ? Tekhelet est un mot qui ne désigne pas nécessairement la nuance de bleu, mais plutôt la source et le procédé utilisés pour produire une teinture bleue particulière.</p>
+<p>La Bible emploie le tekhelet de plusieurs façons.</p>
+<ul>
+  <li>Il sert à décorer les vêtements et les édifices royaux.</li>
+  <li>Il figure dans les vêtements rituels officiels du grand prêtre.</li>
+  <li>C’est un élément important des franges portées par les Israélites ordinaires.</li>
+  <li>C’est un outil d’enseignement qui nous apprend quelque chose sur la personne et l’œuvre de Yeshua.</li>
+</ul>
+<p>Voir l’article de 6 pages « Tekhelet ― Une couleur de l’alliance » {a:tekhelet_pdf}via ce lien.{/a}</p>`,
+  kingdom_more: `<p>Cela peut aussi nous aider à traiter les autres membres du Corps du Messie avec respect et grâce — selon ce qu’ils sont dans le Messie, sans nous laisser rebuter par la chair dans laquelle ils pourraient être empêtrés.</p>
+<p>Ce récit habilement construit illustre avec force la réalité spirituelle de tous ceux qui ont véritablement placé leur foi en Yeshua le Messie.</p>
+<p>Il y a trois volets dans la réalité spirituelle de tous ceux qui ont placé leur foi en Yeshua le Messie.</p>
+<ul>
+  <li>Il existe bel et bien deux royaumes spirituels.</li>
+  <li>Les vrais croyants sont membres du royaume de Dieu.</li>
+  <li>En tant que membres du royaume de Dieu, nous avons une nouvelle identité spirituelle, caractéristique de ce glorieux royaume.</li>
+</ul>
+<p>Explorez ces notions dans {a:twokingdoms_pdf}ce court article{/a}.</p>`,
+  temple_more: `<p>Beaucoup de croyants en Yeshua parlent de la maison de Dieu comme si son absence était un grand soulagement. Ils disent souvent être si heureux que Yeshua soit venu les libérer du fardeau de se rendre en ce lieu avec leurs offrandes. Ils affirment que Sa mort sur le bois a mis fin à tout cela et que nous sommes maintenant libres d’entrer pleinement en la présence de Dieu sans être présents au Temple de Jérusalem, comme si les saints d’autrefois n’avaient pas eux aussi cette même pleine liberté.</p>
+<p>Ariel Berkowitz présente une image de la maison de Dieu qui remet en question ces sentiments égarés. Cette étude n’est qu’une présentation résumée. En réalité, ce que nous allons esquisser devrait être traité plus soigneusement dans un livre entier ! Notre intention ici est seulement d’éveiller l’intérêt, de mettre en appétit et d’encourager une étude plus approfondie de cette question.</p>
+<p>Cette étude est disponible sur {a:temple_tri}le site de TRI Holland{/a} sous forme d’enregistrement vidéo (120 Mo, 75 min) et de notes au format PDF.</p>`,
+  thought_body: `<h3>Joyeux anniversaire !</h3>
+<p>Les anniversaires sont généralement des jours heureux. Aujourd’hui, réfléchissons au jour où l’Église est née. Il existe bien sûr plusieurs opinions. Comment définissez-vous l’Église, et à quelle date est-elle ‘née’ ? Quelques options :</p>
+<ul>
+  <li>à la Pentecôte ou</li>
+  <li>au mont Sinaï ou</li>
+  <li>lorsqu’Abraham a été appelé et peut-être même</li>
+  <li>lorsque Dieu a pris la côte d’Adam et lui a donné son ‘ezer kenegdo’ (une aide qui lui corresponde).</li>
+</ul>
+<p>Qu’en pensez-vous ? Et sur quoi fondez-vous votre réponse ?</p>
+<p>Pour plus d’informations, voir {a:thought_pdf}ce document de 6 pages{/a} d’Ariel Berkowitz.</p>`,
 };

@@ -22,9 +22,9 @@ node build.mjs
 - `src/locales/<code>.mjs` — all text for one language
 - `styles.css`, `script.js`, `assets/` — shared by every language
 
-English is the source. A key missing from another locale falls back to English. The five long
-article bodies (`t3_more`, `blue_more`, `kingdom_more`, `temple_more`, `thought_body`) are not yet
-translated; those pages show the English text with a short “English only” note.
+English is the source. A key missing from another locale falls back to English (blocks such as
+`thought_body` then show the English text with a short “English only” note). All five languages are
+currently fully translated.
 
 ## Add a language
 

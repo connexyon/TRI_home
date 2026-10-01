@@ -106,4 +106,40 @@ export default {
   cta_contact: `Contact`,
   cta_donate: `Doneren`,
   footer_source: `Inhoud en afbeeldingen van torahresourcesinternational.com`,
+
+  // ── Lange teksten (vertaling van de Engelse tekst) ──
+  t3_more: `<p>Je zult zien wat het oorspronkelijke ontwerp en de bedoeling van onze Vader was voor heel Zijn schepping. En je leert jezelf kennen als Zijn kind – geschapen naar het beeld van onze Vader. Dit diepere inzicht in Zijn ontwerp geeft inzicht in wie je geschapen bent te zijn. Wat is ons doel en hoe zijn we geschapen om anderen en de wereld te zien?</p>
+<p>Dit verhaal heeft de kracht een omslag in denken teweeg te brengen, zodat je leeft zoals je Schepper het bedoeld heeft ~ in het begin . . .</p>
+<p>Beschikbaar op {a:torahtruths}torahtruths.com{/a} als ‘Sitting Rooms’.</p>`,
+  blue_more: `<p>Wat is de bijbelse betekenis van deze kleur blauw, in het Hebreeuws tekhelet genoemd, <span lang="he" dir="rtl">תכלת</span>? Tekhelet is een woord dat niet per se de tint blauw aanduidt, maar eerder de bron en de werkwijze waarmee een bijzondere blauwe verfstof werd gemaakt.</p>
+<p>De Bijbel gebruikt tekhelet op verschillende manieren.</p>
+<ul>
+  <li>Het wordt gebruikt om de gewaden en gebouwen van koningen te versieren.</li>
+  <li>Het zit in de officiële rituele kleding van de hogepriester.</li>
+  <li>Het is een belangrijk onderdeel van de kwastjes die gewone Israëlieten droegen.</li>
+  <li>Het is een leermiddel dat ons iets leert over de persoon en het werk van Yeshua.</li>
+</ul>
+<p>Lees het artikel van 6 pagina’s “Tekhelet ― Een kleur van het Verbond” {a:tekhelet_pdf}via deze link.{/a}</p>`,
+  kingdom_more: `<p>Het kan ons ook helpen om anderen in het Lichaam van de Messias met respect en genade te behandelen — naar wie zij in de Messias zijn, en ons niet af te laten schrikken door het vlees waarin zij verstrikt kunnen zijn.</p>
+<p>Dit vakkundig opgebouwde verhaal is een krachtige illustratie van de geestelijke werkelijkheid van ieder die werkelijk zijn geloof heeft gesteld op Yeshua de Messias.</p>
+<p>Er zijn drie onderdelen aan de geestelijke werkelijkheid van ieder die zijn geloof heeft gesteld op Yeshua de Messias.</p>
+<ul>
+  <li>Er zijn inderdaad twee geestelijke koninkrijken.</li>
+  <li>Echte gelovigen zijn leden van Gods koninkrijk.</li>
+  <li>Als leden van Gods koninkrijk hebben we een nieuwe geestelijke identiteit die kenmerkend is voor dat heerlijke koninkrijk.</li>
+</ul>
+<p>Verken deze begrippen in {a:twokingdoms_pdf}dit korte artikel{/a}.</p>`,
+  temple_more: `<p>Veel gelovigen in Yeshua praten over Gods huis alsof de afwezigheid ervan een grote opluchting is. Vaak zeggen ze dat ze zo blij zijn dat Yeshua gekomen is om hen te bevrijden van de last om met hun offers naar die plaats te gaan. Ze beweren dat Zijn dood aan het hout een einde heeft gemaakt aan dat alles en dat we nu vrij zijn om volledig Gods aanwezigheid binnen te gaan zonder aanwezig te zijn in de tempel in Jeruzalem, alsof de heiligen van vroeger niet ook diezelfde volledige vrijheid hadden.</p>
+<p>Ariel Berkowitz schetst een beeld van Gods huis dat die misleide opvattingen uitdaagt. Deze studie is slechts een beknopte presentatie. In werkelijkheid zou wat we hier schetsen zorgvuldiger in een heel boek behandeld moeten worden! Onze bedoeling is slechts interesse te wekken, de eetlust te prikkelen en verdere studie van dit onderwerp aan te moedigen.</p>
+<p>Deze studie is beschikbaar op {a:temple_tri}de website van TRI Holland{/a} als video-opname (120 MB, 75 min) en notities in pdf-formaat.</p>`,
+  thought_body: `<h3>Gefeliciteerd!</h3>
+<p>Verjaardagen zijn meestal vrolijke dagen. Laten we vandaag nadenken over de dag waarop de kerk geboren werd. Er zijn natuurlijk verschillende meningen. Hoe definieer je kerk en op welke datum werd zij ‘geboren’? Een paar mogelijkheden:</p>
+<ul>
+  <li>met Pinksteren of</li>
+  <li>bij de berg Sinaï of</li>
+  <li>toen Abraham werd geroepen en misschien zelfs</li>
+  <li>toen God de rib van Adam nam en hem zijn ‘ezer kenegdo’ (een hulp die bij hem past) gaf.</li>
+</ul>
+<p>Wat denk jij? En waarop baseer je je antwoord?</p>
+<p>Voor meer informatie zie {a:thought_pdf}dit document van 6 pagina’s{/a} van Ariel Berkowitz.</p>`,
 };
