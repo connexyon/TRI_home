@@ -5,7 +5,7 @@
   function setMenu(open) {
     menu.classList.toggle('is-open', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+    toggle.textContent = open ? 'Close' : 'Menu';
   }
   toggle.addEventListener('click', function () { setMenu(!menu.classList.contains('is-open')); });
   menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });

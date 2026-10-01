@@ -1,167 +1,270 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Torah Resources International — 시대를 넘는 토라의 진리</title>
-  <meta name="description" content="Torah Resources International(TRI)은 토라 전체를 통해 예슈아를 깊이 알아가도록 교육 자료와 가르침을 제공합니다.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Torah Resources International — Teaching Timeless Torah Truths</title>
+  <meta name="description" content="It was true in the days of Moses. It was still true in the days of Yeshua and … the Torah is still true today.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <a class="skip" href="#main">Skip to main content</a>
 
-  <header class="nav" id="nav">
-    <div class="nav__bar">
-      <a class="nav__logo" href="#top" aria-label="Torah Resources International 홈">TRI</a>
-      <nav aria-label="주요 메뉴">
+  <header class="nav">
+    <div class="wrap nav__bar">
+      <a class="nav__logo" href="#top"><img src="assets/TORAH-LOGO-1.png" width="350" height="34" alt="Torah Resources International"></a>
+      <button class="nav__toggle" id="toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav aria-label="Main">
         <ul class="nav__links" id="menu">
-          <li><a href="#about">소개</a></li>
-          <li><a href="#resources">자료</a></li>
-          <li><a href="#teaching">가르침</a></li>
-          <li><a href="#mission">사명</a></li>
-          <li><a href="#people">강사</a></li>
+          <li><a href="#featured">Torah</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="nav__cta" href="https://torahresourcesinternational.com/donate/" target="_blank" rel="noopener">Donate<span class="sr"> (opens in a new tab)</span></a></li>
         </ul>
       </nav>
-      <a class="btn btn--glass nav__cta" href="https://torahresourcesinternational.com/donate/" target="_blank" rel="noopener">후원하기</a>
-      <button class="nav__toggle" id="toggle" aria-expanded="false" aria-controls="menu" aria-label="메뉴 열기">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
-      </button>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="wrap hero__inner">
-        <p class="hero__org">Torah Resources International</p>
-        <h1 class="hero__title">시대를 넘는<br>토라의 진리를<br>가르칩니다.</h1>
-        <div class="hero__foot">
-          <p class="hero__lead">Teaching Timeless Torah Truths. 예슈아를 더 깊이 알고, 성경의 원리대로 사는 길을 토라 안에서 배웁니다.</p>
-          <a class="btn btn--lime" href="#resources">자료 둘러보기
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="wrap about__grid">
-        <p class="about__tag">TRI 소개</p>
+      <div class="wrap hero__grid">
+        <h1 class="hero__title">Teaching Timeless Torah Truths</h1>
         <div>
-          <h2 class="about__title">창세기부터 계시록까지, 토라 전체를 통해 살아 있는 말씀이신 예슈아를 알아갑니다.</h2>
-          <p class="about__text">TRI는 성경이 말하는 히브리적 토라의 개념을 알리는 교육 단체입니다. 우리가 어떻게 살도록 창조되었는지, 예슈아를 어떻게 더 깊이 이해할 수 있는지를 함께 배웁니다.</p>
-          <p class="about__text">교육 자료를 만들어 나누고, 온라인과 현장에서 가르치며 메시아의 몸을 섬깁니다.</p>
-          <p class="about__quote">토라는 오늘도 참됩니다.</p>
+          <p class="hero__lead"><strong>Welcome!</strong> It was true in the days of Moses. It was still true in the days of Yeshua and …. the Torah is still true today.</p>
+          <p class="hero__sub">If you want to gain a greater depth of understanding of Yeshua, as well as how we were created to live this is a place of help for you.</p>
+          <p class="hero__actions"><a class="btn" href="#featured">Start with the Torah portion</a><a class="btn btn--ghost" href="#teaching">Browse teaching</a></p>
         </div>
       </div>
     </section>
 
-    <section class="section resources" id="resources">
+    <section class="stage" id="featured">
+      <div class="wrap items">
+        <article class="item">
+          <a class="item__img" href="https://torahresourcesinternational.com/torah-portion/" target="_blank" rel="noopener"><img src="assets/Torah-with-pointer-medium-a.jpg" width="295" height="196" alt="A Torah scroll with a pointer"></a>
+          <h2>Torah Portion</h2>
+          <p class="meta">The Torah portions and the Haftara.</p>
+          <p>With commentary from Briteinu.</p>
+          <a class="rule" href="https://torahresourcesinternational.com/torah-portion/" target="_blank" rel="noopener">Read this week’s portion<span class="sr"> (opens in a new tab)</span></a>
+        </article>
+        <article class="item">
+          <a class="item__img" href="https://www.triholland.nl/product-categorie/parashot/" target="_blank" rel="noopener"><img src="assets/Screenshot-from-2024-03-23-20-59-54.png" width="436" height="383" alt="Featured audio teaching artwork"></a>
+          <h2>Mordechai &amp; Esther’s choice</h2>
+          <p class="meta">Audio recording · 80 min</p>
+          <p>Yo’el Berkowitz connects the story of Purim with the instructions for worship in Leviticus 1 – 5.</p>
+          <details>
+            <summary>Read more</summary>
+            <p>He shows the difference between Haman and Mordechai and explains how Ephesians 2 and 3 connects to the asham (guilt offering) of Yeshua. 40 MB mp3 recording. Length 80 min. Available on <a href="https://www.triholland.nl/product-categorie/parashot/" target="_blank" rel="noopener">TRI-Holland webshop.</a></p>
+          </details>
+        </article>
+        <article class="item">
+          <a class="item__img" href="https://torahtruths.com/" target="_blank" rel="noopener"><img src="assets/garden-story.jpg" width="257" height="254" alt="Illustration of the garden story"></a>
+          <h2>What did take place in the Garden?</h2>
+          <p class="meta">Available as ‘Sitting Rooms’</p>
+          <p>We will explore the original story of creation.</p>
+          <details>
+            <summary>Read more</summary>
+            <p>You will see what our Father’s original design and intention was for His entire creation. And you will learn to know yourself as his child – created in our Father’s image. This deeper understanding of His design gives insight into who you are created to be. What is our purpose and how are we created to see others and the world.</p>
+            <p>This story has the power to cause a paradigm shift to live your life as your Creator intended ~ in the beginning . . .</p>
+            <p>Available on <a href="https://torahtruths.com/" target="_blank" rel="noopener">torahtruths.com</a> as ‘Sitting Rooms’.</p>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section class="reading" id="teaching">
       <div class="wrap">
-        <h2 class="section__title">공부를 위한 자료</h2>
-        <div class="bento">
-          <article class="card card--feature">
-            <div class="card__meta"><span class="chip chip--lime">매주 업데이트</span></div>
-            <h3>토라 포션</h3>
-            <p>매주 읽는 토라 포션과 하프타라를 Briteinu의 해설과 함께 만납니다.</p>
-            <a class="link" href="https://torahresourcesinternational.com/torah/" target="_blank" rel="noopener">토라 포션 보기<span class="sr"> (새 창)</span></a>
-          </article>
-          <article class="card">
-            <div class="card__meta"><span class="chip">안내서</span></div>
-            <h3>토라 공부하는 법</h3>
-            <p>토라를 어떻게 읽고 공부할지 알려 주는 가이드와 성경 학생의 자세에 관한 자료입니다.</p>
-            <a class="link" href="https://torahresourcesinternational.com/how-to-study/" target="_blank" rel="noopener">공부 방법 보기<span class="sr"> (새 창)</span></a>
-          </article>
-          <article class="card">
-            <div class="card__meta"><span class="chip">도서</span></div>
-            <h3>책</h3>
-            <p>「Open My Eyes」를 비롯해 TRI가 펴낸 책을 구입할 수 있습니다.</p>
-            <a class="link" href="https://torahresourcesinternational.com/books/" target="_blank" rel="noopener">책 보기<span class="sr"> (새 창)</span></a>
-          </article>
-          <article class="card card--wide">
-            <div class="card__meta"><span class="chip">함께 생각하기</span></div>
-            <h3>Food for Thought · 7 Questions</h3>
-            <p>신학적 질문을 차분히 짚어 보는 글과, 약속의 땅을 다루는 7가지 질문을 소개합니다.</p>
-            <a class="link" href="https://torahresourcesinternational.com" target="_blank" rel="noopener">원문 사이트에서 읽기<span class="sr"> (새 창)</span></a>
-          </article>
+        <p class="label">Teaching</p>
+
+        <div class="row">
+          <h2>Is your identity blue?</h2>
+          <div class="body">
+            <p>We do see blue on the streets of Jerusalem. Yes, we can see blue in clothes and flags, but also in the strings that hang down from the sides of the trousers and dangling from the four corners of the prayer shawls of religious Jewish men.</p>
+            <details>
+              <summary>Read more</summary>
+              <p>What is the biblical significance of this color blue called in Hebrew tekhelet, <span lang="he" dir="rtl">תכלת</span>. Tekhelet is a word that does not necessarily connote the shade of blue, but rather the source and procedure used to produce a special blue dye.</p>
+              <p>The Bible uses tekhelet in a number of ways.</p>
+              <ul>
+                <li>It is used to decorate the robes and buildings of royalty.</li>
+                <li>It is in the formal ritual clothes of the High Priest.</li>
+                <li>It is an important component of the fringes worn by everyday Israelites.</li>
+                <li>It is a teaching tool to instruct us something about the person/work of Yeshua.</li>
+              </ul>
+              <p>See the 6-page article “Tekhelet ― A Color of the Covenant” <a href="https://torahresourcesinternational.com/wp-content/uploads/2025/01/tekhelet.pdf" target="_blank" rel="noopener">via this link.</a></p>
+            </details>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>To which kingdom do we belong?</h2>
+          <div class="body">
+            <p>Knowing our spiritual identity can have life-impacting ramifications of each and every believer. It can help us to walk as ones who are part of God’s kingdom, despite how we feel or what our circumstances might be.</p>
+            <details>
+              <summary>Read more</summary>
+              <p>It can also help us to treat others in the Body of Messiah with respect and grace — according to who they are in Messiah and not be put off by any flesh in which they might be entangled.</p>
+              <p>This skilfully crafted story is a powerful illustration of the spiritual reality of everyone who has truly placed their faith in Yeshua the Messiah.</p>
+              <p>There are three parts to the spiritual reality of everyone who has placed their faith in Yeshua the Messiah.</p>
+              <ul>
+                <li>There are, indeed, two spiritual kingdoms.</li>
+                <li>Real believers are members of God’s kingdom.</li>
+                <li>As members of God’s kingdom, we have a new spiritual identity that is characteristic of that glorious kingdom.</li>
+              </ul>
+              <p>Explore these concepts in <a href="https://torahresourcesinternational.com/wp-content/uploads/2018/10/two_kingdoms.pdf" target="_blank" rel="noopener">this short article</a>.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>God’s House/The Temple</h2>
+          <div class="body">
+            <p>Three times every day, seven days a week, Jewish people pray, “Find favor, Lord our God, in Your people Israel and their prayer. Restore the service to Your most holy House”. What do they know about God’s House in Jerusalem that most believers in Yeshua do not understand?</p>
+            <details>
+              <summary>Read more</summary>
+              <p>Many believers in Yeshua speak about God’s House as if its absence is a great relief. Frequently, they state that they are so happy that Yeshua has come to free them from the burden of going to that place with their offerings. They assert that His death upon the tree has put an end to all of that and now we are free to come fully into God’s presence without being present at the Temple in Jerusalem as if to say the saints of old did not also have that same full freedom.</p>
+              <p>Ariel Berkowitz presents a picture of God’s House that would challenge those misguided sentiments. This study is only a summary presentation. In reality, what we are about to outline should be more carefully treated in a full book! Our intention here is but to spark interest, wet some appetites, and encourage further study on this matter.</p>
+              <p>This study is available on <a href="https://www.triholland.nl/product-categorie/2024-temple-en/?lang=en" target="_blank" rel="noopener">the website of TRI Holland</a> as a video recording (120 MB, 75 min) and notes in pdf format.</p>
+            </details>
+          </div>
+        </div>
+
+        <div class="row" id="thought">
+          <h2>Food for thought</h2>
+          <div class="body">
+            <h3>Happy Birthday!</h3>
+            <p>Birthdays are usually happy days. Today, let us think about the day the Church was born. Of course there are a few different opinions. How do you define Church and then what date was it ‘born’. A few options:</p>
+            <ul>
+              <li>at Pentecost or</li>
+              <li>at Mount Sinai or</li>
+              <li>when Abraham was called and maybe even</li>
+              <li>when God took Adam’s rib and gave him his ‘ezer connegdo’.</li>
+            </ul>
+            <p>What do you think? And what is the basis of your answer?</p>
+            <p>For more information see <a href="https://torahresourcesinternational.com/wp-content/uploads/2025/08/SN_1st_Century_Believing_Community.pdf" target="_blank" rel="noopener">this 6-pages document</a> of Ariel Berkowitz.</p>
+          </div>
+        </div>
+
+        <div class="row" id="questions">
+          <h2>7 Questions.</h2>
+          <div class="body">
+            <p>At the Arab-Jewish reconciliation conference in The Netherlands in 2007 participants wrote <a href="https://torahresourcesinternational.com/7questions/" target="_blank" rel="noopener">answers</a> on the following questions:</p>
+            <details>
+              <summary>See the seven questions</summary>
+              <ol>
+                <li>What is the Promised Land?</li>
+                <li>What are the geographical borders?</li>
+                <li>To whom does the Promised Land belong?</li>
+                <li>When will the full recovery of the Land take place?</li>
+                <li>Is the Promised Land limited to the Covenant people of Israel?</li>
+                <li>Does the Church have a role?</li>
+                <li>What are the implications for the major conflicts of today?</li>
+              </ol>
+              <p><a href="https://torahresourcesinternational.com/7questions/" target="_blank" rel="noopener">This is what they wrote.</a></p>
+            </details>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section teaching" id="teaching">
+    <section class="reading reading--white" id="more">
       <div class="wrap">
-        <h2 class="section__title">대표 가르침</h2>
-        <div class="feature-teaching">
-          <p class="feature-teaching__tag">추천 오디오 · 80분</p>
-          <h3>모르드개와 에스더의 선택</h3>
-          <p>부림절 이야기를 레위기의 예배 지침과 연결해 살펴봅니다.</p>
-        </div>
-        <ul class="teach-list">
+        <p class="label">More from TRI</p>
+        <ul class="list">
           <li>
-            <h3>Tekhelet — 언약의 색</h3>
-            <p>히브리어로 '테켈렛'이라 불린 푸른 염료가 왕의 의복과 제사장의 예복, 이스라엘 사람들의 옷술에 어떻게 쓰였는지, 그리고 예슈아의 정체와 사역을 어떻게 가리키는지 살펴봅니다.</p>
+            <h2>… to be like a tree ..</h2>
+            <p>…. firmly planted by streams of water, that yields its fruit in its season …. (Psalm 1:3) How can we be fruitful? How does that happen?</p>
+            <a href="https://torahresourcesinternational.com/wp-content/uploads/2018/10/how_to_study_torah.pdf" target="_blank" rel="noopener">How to study the Torah<span class="sr"> (opens in a new tab)</span></a>
           </li>
           <li>
-            <h3>영적 정체성과 하나님 나라</h3>
-            <p>두 영적 나라가 있다는 것, 믿는 이들이 하나님 나라에 속해 있다는 것, 그 나라에 속한 이들의 고유한 정체성을 이야기로 풀어 줍니다.</p>
+            <h2>A different gospel?</h2>
+            <p>What about Sha’ul’s Letter to the Galatians? Are the practices of the first five books of the Bible prohibited for believers in Yeshua. Or … does the Torah have a meaningful place in the everyday life of the believer?</p>
+            <a href="https://torahresourcesinternational.com/wp-content/uploads/2018/10/galatians_summary.pdf" target="_blank" rel="noopener">Let’s look at it<span class="sr"> (opens in a new tab)</span></a>
           </li>
           <li>
-            <h3>하나님의 집, 성전</h3>
-            <p>예루살렘 성전이 이미 낡은 것이라는 생각에 맞서, 성전이 보여 주는 '하나님의 집'의 그림을 설명합니다. 영상(75분)과 공부 노트가 있습니다.</p>
+            <h2>Saint or Sinner?</h2>
+            <p>Who are you? ‘Just’ a sinner saved by grace? A sinner without hope but now clothed with the righteousness of Yeshua? Or …. a Saint saved by grace? Your basic identity has been changed completely.</p>
+            <a href="https://www.triholland.nl/product-categorie/identity-in-messiah/?lang=en" target="_blank" rel="noopener">Download on TRIHolland.nl<span class="sr"> (opens in a new tab)</span></a>
+          </li>
+          <li>
+            <h2>Should, Must or Have To?</h2>
+            <p>The use of such words tends to open the door wide to legalism taking over.</p>
+            <a href="https://torahresourcesinternational.com/" target="_blank" rel="noopener">Read on torahresourcesinternational.com<span class="sr"> (opens in a new tab)</span></a>
           </li>
         </ul>
-        <a class="btn btn--dark" href="https://torahresourcesinternational.com/teaching/" target="_blank" rel="noopener">모든 가르침 보기<span class="sr"> (새 창)</span></a>
       </div>
     </section>
 
-    <section class="section mission" id="mission">
-      <div class="wrap mission__grid">
-        <div>
-          <h2 class="section__title">우리의 사명</h2>
-          <p class="mission__lead">성경의 하나님께 영광을 돌리기 위하여.</p>
-        </div>
-        <ul class="creds">
-          <li>에스라 7장 10절의 본을 따라 여호와의 토라를 연구하고, 실천하고, 가르칩니다.</li>
-          <li>성경을 공부하고 가르치는 이들을 돕는 자료를 제공합니다.</li>
-          <li>이스라엘의 땅과 백성, 거룩한 말씀에 대한 세계의 이해와 존중을 깊게 합니다.</li>
-          <li>유대인과 맺으신 하나님의 변치 않는 언약을 가르쳐 반유대주의에 맞섭니다.</li>
-          <li>하나님의 선택받은 백성인 유대 공동체에 영적 격려를 전합니다.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section people" id="people">
+    <section class="stage stage--top" id="books">
       <div class="wrap">
-        <h2 class="section__title">함께하는 사람들</h2>
-        <ul class="people__list">
-          <li><strong>Yo'el Berkowitz</strong></li>
-          <li><strong>Ariel Berkowitz</strong></li>
-          <li><strong>Briteinu</strong><span>토라 포션 해설</span></li>
-        </ul>
+        <p class="label">Books</p>
+        <div class="items books">
+          <article class="item">
+            <a class="item__img item__img--book" href="https://www.amazon.com/dp/0990437876/" target="_blank" rel="noopener"><img src="assets/Genesis-2.jpg" width="174" height="218" alt="Cover of Bereshit: The Foundations of Covenant" loading="lazy"></a>
+            <h2>The Briteinu Commentary</h2>
+            <p class="meta">Weekly Torah portions</p>
+            <p>How to understand the text of the Torah in its historical, geographical and cultural context? These volumes comment on the weekly Torah portions. Each portion ends with a number of study questions. The Briteinu commentary series connects each of the five books of Torah by a common theme: Covenant.</p>
+            <a class="rule" href="https://www.amazon.com/dp/0990437876/" target="_blank" rel="noopener">Click to Order<span class="sr"> (opens in a new tab)</span></a>
+          </article>
+          <article class="item">
+            <a class="item__img item__img--book" href="https://www.amazon.com/dp/172605313X/" target="_blank" rel="noopener"><img src="assets/TorahRediscovered.jpg" width="333" height="499" alt="Cover of Torah Rediscovered" loading="lazy"></a>
+            <h2>Torah Rediscovered</h2>
+            <p class="meta">Newly revised 2013</p>
+            <p>Torah Rediscovered lovingly challenges readers, Jewish and non-Jewish alike, to take an honest new look at the true nature of the first five books of the Bible (the Torah). Torah Rediscovered reveals the beauty and depth of God’s divine covenantal revelation.</p>
+            <a class="rule" href="https://www.amazon.com/dp/172605313X/" target="_blank" rel="noopener">Click to Order<span class="sr"> (opens in a new tab)</span></a>
+          </article>
+          <article class="item">
+            <a class="item__img item__img--book" href="https://www.amazon.com/dp/1087386950/" target="_blank" rel="noopener"><img src="assets/takehold.jpg" width="333" height="499" alt="Cover of Take Hold" loading="lazy"></a>
+            <h2>Take Hold: Embracing Our Divine Inheritance with Israel</h2>
+            <p class="meta">What is the relationship between Israel and believers in Yeshua?</p>
+            <p>Take Hold is an expanded exposition of Zechariah 8:23, a prophetic passage. It describes a time when believers in Yeshua from the nations of the world will find expression to their divine connection with the Land, the People, and the Scriptures of Israel.</p>
+            <a class="rule" href="https://www.amazon.com/dp/1087386950/" target="_blank" rel="noopener">Click to Order<span class="sr"> (opens in a new tab)</span></a>
+          </article>
+        </div>
+        <p class="all"><a href="https://torahresourcesinternational.com/books/" target="_blank" rel="noopener">See all books<span class="sr"> (opens in a new tab)</span></a></p>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="wrap contact__grid">
-        <div>
-          <h2 class="contact__title">TRI와 함께해 주세요.</h2>
-          <p class="contact__text">문의는 TRI 공식 사이트의 문의 페이지로 연결됩니다. 후원은 이 사역이 계속되도록 돕습니다.</p>
+    <section class="reading reading--white" id="about">
+      <div class="wrap">
+        <div class="row">
+          <h2>About Us</h2>
+          <div class="body body--large">
+            <p><strong>Welcome!</strong> The focus of Torah Resources International is knowing Yeshua as the Living Word and Messiah by studying the entire Torah, from Genesis through Revelation. We seek to promote the Biblically Hebraic concepts of the Torah with the hope that people will gain a greater depth of understanding of Yeshua, as well as how we were created to live.</p>
+            <p>By preparing and publishing teaching material and teaching, both online as well as in person, we want to be a resource to the body of Messiah.</p>
+          </div>
         </div>
-        <div class="contact__actions">
-          <a class="btn btn--lime" href="https://torahresourcesinternational.com/contact-us/" target="_blank" rel="noopener">문의하기<span class="sr"> (새 창)</span></a>
-          <a class="btn btn--glass" href="https://torahresourcesinternational.com/donate/" target="_blank" rel="noopener">후원하기<span class="sr"> (새 창)</span></a>
+        <div class="row" id="mission">
+          <h2>Mission Statement</h2>
+          <div class="body">
+            <p>The purpose of Torah Resources International is to glorify the God of the Scriptures, especially in the following ways:</p>
+            <ul>
+              <li>By keeping the Biblical example found in Ezra 7:10, TRI endeavours “to study, to practice, and to teach the Torah of the Lord.”</li>
+              <li>By providing human and material resources that aid Bible students and teachers.</li>
+              <li>By seeking to encourage the nations of the world in their knowledge of, connection to, and appreciation of the Land, the People, and the Scriptures of Israel.</li>
+              <li>By informing and educating students of the Bible of God’s purpose and continuing covenant with the Jewish people in an effort to combat anti-Semitism.</li>
+              <li>By being a spiritual comfort and support to the Jewish people especially in their role as the chosen people of God.</li>
+            </ul>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="wrap cta__inner">
+        <h2>Questions, or want to support the work?</h2>
+        <p class="hero__actions">
+          <a class="btn btn--light" href="https://torahresourcesinternational.com/contact-us/" target="_blank" rel="noopener">Contact<span class="sr"> (opens in a new tab)</span></a>
+          <a class="btn btn--outline" href="https://torahresourcesinternational.com/donate/" target="_blank" rel="noopener">Donate<span class="sr"> (opens in a new tab)</span></a>
+        </p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <strong>Torah Resources International</strong>
-      <small>내용 출처: torahresourcesinternational.com · © 2018 Torah Resources International</small>
+      <small>© 2018 Torah Resources International</small>
+      <small>Content and images from torahresourcesinternational.com</small>
     </div>
   </footer>
 
