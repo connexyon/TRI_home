@@ -8,6 +8,7 @@ Torah Resources International — multilingual static site.
 | 한국어 | `/ko/` | `src/locales/ko.mjs` |
 | Nederlands | `/nl/` | `src/locales/nl.mjs` |
 | Français | `/fr/` | `src/locales/fr.mjs` |
+| 简体中文 | `/zh/` | `src/locales/zh.mjs` |
 | 日本語 | `/ja/` | `src/locales/ja.mjs` |
 
 ## Edit and build
@@ -23,7 +24,7 @@ node build.mjs
 - `styles.css`, `script.js`, `assets/` — shared by every language
 
 English is the source. A key missing from another locale falls back to English (blocks such as
-`thought_body` then show the English text with a short “English only” note). All five languages are
+`thought_body` then show the English text with a short “English only” note). All six languages are
 currently fully translated.
 
 ## Add a language

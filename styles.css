@@ -139,6 +139,10 @@ html[lang="ko"] body { word-break: keep-all; }
 html[lang="ko"] .hero__title, html[lang="ja"] .hero__title, html[lang="ko"] .cta h2, html[lang="ja"] .cta h2 { letter-spacing: -.01em; }
 html[lang="ja"] { --sans: "Pretendard Variable", Pretendard, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif; }
 html[lang="ja"] body { line-break: strict; line-height: 1.9; }
+html[lang="zh-Hans"] { --sans: "Pretendard Variable", Pretendard, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+html[lang="zh-Hans"] body { line-height: 1.9; }
+html[lang="zh-Hans"] .hero__title { font-weight: 400; line-height: 1.25; letter-spacing: 0; }
+html[lang="zh-Hans"] .cta h2 { letter-spacing: 0; }
 html[lang="ja"] .hero__title { font-weight: 400; line-height: 1.25; }
 html[lang="ko"] .hero__title { line-height: 1.2; }
 html[lang="fr"] .hero__title, html[lang="nl"] .hero__title { font-size: clamp(2rem, 4.2vw, 3.75rem); }

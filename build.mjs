@@ -1,4 +1,4 @@
-// Static site generator: src/template.html + src/locales/<code>.mjs  ->  index.html (en), ko/, nl/, fr/, ja/
+// Static site generator: src/template.html + src/locales/<code>.mjs  ->  index.html (en), ko/, nl/, fr/, zh/, ja/
 // Usage: node build.mjs        (no dependencies)
 //
 // Add a language:  1) create src/locales/<code>.mjs   2) add it to LANGS below   3) run node build.mjs
@@ -19,6 +19,7 @@ const LANGS = [
   { code: 'ko', name: '한국어' },
   { code: 'nl', name: 'Nederlands' },
   { code: 'fr', name: 'Français' },
+  { code: 'zh', htmlLang: 'zh-Hans', name: '简体中文', head: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">' },
   { code: 'ja', name: '日本語', head: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap">' },
 ];
 const DEFAULT = 'en';
@@ -73,7 +74,7 @@ function render(lang) {
     `<details class="lang"><summary><span class="sr">${get('lang_label')}: </span>${lang.name}</summary><ul>` +
     LANGS.map((l) => {
       const current = l.code === lang.code ? ' aria-current="true"' : '';
-      return `<li><a href="${hrefTo(lang.code, l.code)}" lang="${l.code}" hreflang="${l.code}"${current}>${l.name}</a></li>`;
+      return `<li><a href="${hrefTo(lang.code, l.code)}" lang="${l.htmlLang || l.code}" hreflang="${l.htmlLang || l.code}"${current}>${l.name}</a></li>`;
     }).join('') +
     `</ul></details>`;
 
@@ -81,7 +82,7 @@ function render(lang) {
     lang.head || '',
     ...(SITE_URL
       ? [
-          ...LANGS.map((l) => `<link rel="alternate" hreflang="${l.code}" href="${SITE_URL}/${l.code === DEFAULT ? '' : l.code + '/'}">`),
+          ...LANGS.map((l) => `<link rel="alternate" hreflang="${l.htmlLang || l.code}" href="${SITE_URL}/${l.code === DEFAULT ? '' : l.code + '/'}">`),
           `<link rel="alternate" hreflang="x-default" href="${SITE_URL}/">`,
         ]
       : []),
@@ -101,7 +102,7 @@ function render(lang) {
     })
     .replace(/\{\{(\w+)\}\}/g, (_, key) => {
       switch (key) {
-        case 'lang': return lang.code;
+        case 'lang': return lang.htmlLang || lang.code;
         case 'root': return root;
         case 'lang_menu': return langMenu;
         case 'head_extra': return headExtra;
