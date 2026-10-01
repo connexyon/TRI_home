@@ -120,6 +120,30 @@ details[open] summary { padding-bottom: 8px; }
 .footer { padding-block: var(--s4); font-size: 13px; color: var(--soft); border-top: 1px solid var(--line); background: var(--cream); }
 .footer__inner { display: flex; justify-content: space-between; gap: var(--s2); flex-wrap: wrap; }
 
+
+/* language menu */
+.nav__lang { position: relative; }
+.lang summary { list-style: none; cursor: pointer; font-size: 14px; font-weight: 500; padding: 14px 0; min-height: 48px; display: flex; align-items: center; gap: 6px; color: var(--ink); }
+.lang summary::-webkit-details-marker { display: none; }
+.lang summary::after { content: ""; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform .2s; }
+.lang[open] summary::after { transform: rotate(-135deg) translateY(-2px); }
+.lang ul { list-style: none; margin: 0; padding: 8px 0; position: absolute; right: 0; top: 100%; min-width: 168px; background: var(--cream); border: 1px solid var(--hair); box-shadow: 0 12px 28px rgba(20,20,20,.12); z-index: 60; }
+.lang li a { display: block; padding: 12px 18px; font-size: 14px; text-decoration: none; color: var(--ink); }
+.lang li a:hover { background: var(--panel); }
+.lang li a[aria-current] { font-weight: 700; color: var(--accent); }
+
+.en-note { font-size: 13px; color: var(--soft); margin-bottom: 8px !important; padding-left: 10px; border-left: 2px solid var(--hair); }
+
+/* per-language typography */
+html[lang="ko"] body { word-break: keep-all; }
+html[lang="ko"] .hero__title, html[lang="ja"] .hero__title, html[lang="ko"] .cta h2, html[lang="ja"] .cta h2 { letter-spacing: -.01em; }
+html[lang="ja"] { --sans: "Pretendard Variable", Pretendard, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif; }
+html[lang="ja"] body { line-break: strict; line-height: 1.9; }
+html[lang="ja"] .hero__title { font-weight: 400; line-height: 1.25; }
+html[lang="ko"] .hero__title { line-height: 1.2; }
+html[lang="fr"] .hero__title, html[lang="nl"] .hero__title { font-size: clamp(2rem, 4.2vw, 3.75rem); }
+html[lang="nl"] .hero__title, html[lang="fr"] .hero__title { hyphens: auto; }
+
 /* responsive */
 html { -webkit-text-size-adjust: 100%; }
 body { overflow-wrap: break-word; }
@@ -142,6 +166,8 @@ body { overflow-wrap: break-word; }
   .nav__links.is-open { display: flex; }
   .nav__links a { padding: 14px 0; min-height: 48px; }
   .nav__links .nav__cta { margin-top: 8px; }
+  .nav__lang { width: 100%; }
+  .lang ul { position: static; box-shadow: none; border: 0; border-left: 1px solid var(--hair); margin-left: 4px; min-width: 0; background: transparent; }
   .hero { padding-bottom: var(--s5); }
   .stage { padding-bottom: var(--s5); }
   .stage--top { padding-top: var(--s5); }

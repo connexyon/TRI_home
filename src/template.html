@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  {{head_extra}}
+  <link rel="stylesheet" href="{{root}}styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">{{skip}}</a>
+
+  <header class="nav">
+    <div class="wrap nav__bar">
+      <a class="nav__logo" href="#top"><img src="{{root}}assets/TORAH-LOGO-1.png" width="350" height="34" alt="Torah Resources International"></a>
+      <button class="nav__toggle" id="toggle" aria-expanded="false" aria-controls="menu" data-open="{{menu}}" data-close="{{close}}">{{menu}}</button>
+      <nav aria-label="{{nav_label}}">
+        <ul class="nav__links" id="menu">
+          <li><a href="#featured">{{nav_torah}}</a></li>
+          <li><a href="#teaching">{{nav_teaching}}</a></li>
+          <li><a href="#books">{{nav_books}}</a></li>
+          <li><a href="#about">{{nav_about}}</a></li>
+          <li class="nav__lang">{{lang_menu}}</li>
+          <li><a class="nav__cta" href="{{url:donate}}" target="_blank" rel="noopener">{{nav_donate}}<span class="sr">{{newtab}}</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__wash" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title r r1">{{hero_title_1}}<br>{{hero_title_2}}</h1>
+          <p class="hero__lead r r2"><strong>{{hero_welcome}}</strong> {{hero_lead}}</p>
+          <p class="hero__sub r r3">{{hero_sub}}</p>
+          <p class="hero__actions r r4"><a class="btn" href="#featured">{{cta_start}}</a><a class="link-cta" href="#teaching">{{cta_browse}}</a></p>
+        </div>
+        <div class="collage r r5">
+          <img class="collage__primary" src="{{root}}assets/hero-torah-scroll.gif" width="720" height="483" alt="{{alt_scroll}}">
+          <img class="collage__secondary" src="{{root}}assets/fruit-trees-at-water.jpg" width="800" height="520" alt="{{alt_trees}}">
+        </div>
+      </div>
+    </section>
+
+    <section class="stage" id="featured">
+      <div class="wrap items">
+        <article class="item">
+          <a class="item__img" href="{{url:torahportion}}" target="_blank" rel="noopener"><img src="{{root}}assets/Torah-with-pointer-medium-a.jpg" width="295" height="196" alt="{{t1_alt}}"></a>
+          <h2>{{t1_title}}</h2>
+          <p class="meta">{{t1_meta}}</p>
+          <p>{{t1_desc}}</p>
+          <a class="rule" href="{{url:torahportion}}" target="_blank" rel="noopener">{{t1_link}}<span class="sr">{{newtab}}</span></a>
+        </article>
+        <article class="item">
+          <a class="item__img" href="{{url:triholland_parashot}}" target="_blank" rel="noopener"><img src="{{root}}assets/Screenshot-from-2024-03-23-20-59-54.png" width="436" height="383" alt="{{t2_alt}}"></a>
+          <h2>{{t2_title}}</h2>
+          <p class="meta">{{t2_meta}}</p>
+          <p>{{t2_desc}}</p>
+          <details>
+            <summary>{{read_more}}</summary>
+            <p>{{t2_more}}</p>
+          </details>
+        </article>
+        <article class="item">
+          <a class="item__img" href="{{url:torahtruths}}" target="_blank" rel="noopener"><img src="{{root}}assets/garden-story.jpg" width="257" height="254" alt="{{t3_alt}}"></a>
+          <h2>{{t3_title}}</h2>
+          <p class="meta">{{t3_meta}}</p>
+          <p>{{t3_desc}}</p>
+          <details>
+            <summary>{{read_more}}</summary>
+            {{block:t3_more}}
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section class="reading" id="teaching">
+      <div class="wrap">
+        <p class="label">{{label_teaching}}</p>
+
+        <div class="row">
+          <h2>{{blue_title}}</h2>
+          <div class="body">
+            <p>{{blue_intro}}</p>
+            <details>
+              <summary>{{read_more}}</summary>
+              {{block:blue_more}}
+            </details>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>{{kingdom_title}}</h2>
+          <div class="body">
+            <p>{{kingdom_intro}}</p>
+            <details>
+              <summary>{{read_more}}</summary>
+              {{block:kingdom_more}}
+            </details>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>{{temple_title}}</h2>
+          <div class="body">
+            <p>{{temple_intro}}</p>
+            <details>
+              <summary>{{read_more}}</summary>
+              {{block:temple_more}}
+            </details>
+          </div>
+        </div>
+
+        <div class="row" id="thought">
+          <h2>{{thought_title}}</h2>
+          <div class="body">
+            {{block:thought_body}}
+          </div>
+        </div>
+
+        <div class="row" id="questions">
+          <h2>{{q_title}}</h2>
+          <div class="body">
+            <p>{{q_intro}}</p>
+            <details>
+              <summary>{{q_summary}}</summary>
+              <ol>
+                <li>{{q1}}</li>
+                <li>{{q2}}</li>
+                <li>{{q3}}</li>
+                <li>{{q4}}</li>
+                <li>{{q5}}</li>
+                <li>{{q6}}</li>
+                <li>{{q7}}</li>
+              </ol>
+              <p><a href="{{url:q7}}" target="_blank" rel="noopener">{{q_link}}</a></p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reading reading--white" id="more">
+      <div class="wrap">
+        <p class="label">{{label_more}}</p>
+        <ul class="list">
+          <li>
+            <h2>{{m1_title}}</h2>
+            <p>{{m1_text}}</p>
+            <a href="{{url:howtostudy_pdf}}" target="_blank" rel="noopener">{{m1_link}}<span class="sr">{{newtab}}</span></a>
+          </li>
+          <li>
+            <h2>{{m2_title}}</h2>
+            <p>{{m2_text}}</p>
+            <a href="{{url:galatians_pdf}}" target="_blank" rel="noopener">{{m2_link}}<span class="sr">{{newtab}}</span></a>
+          </li>
+          <li>
+            <h2>{{m3_title}}</h2>
+            <p>{{m3_text}}</p>
+            <a href="{{url:identity_tri}}" target="_blank" rel="noopener">{{m3_link}}<span class="sr">{{newtab}}</span></a>
+          </li>
+          <li>
+            <h2>{{m4_title}}</h2>
+            <p>{{m4_text}}</p>
+            <a href="{{url:tri_home}}" target="_blank" rel="noopener">{{m4_link}}<span class="sr">{{newtab}}</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stage stage--top" id="books">
+      <div class="wrap">
+        <p class="label">{{label_books}}</p>
+        <div class="items books">
+          <article class="item">
+            <a class="item__img item__img--book" href="{{url:book1}}" target="_blank" rel="noopener"><img src="{{root}}assets/Genesis-2.jpg" width="174" height="218" alt="{{b1_alt}}" loading="lazy"></a>
+            <h2>{{b1_title}}</h2>
+            <p class="meta">{{b1_meta}}</p>
+            <p>{{b1_text}}</p>
+            <a class="rule" href="{{url:book1}}" target="_blank" rel="noopener">{{order}}<span class="sr">{{newtab}}</span></a>
+          </article>
+          <article class="item">
+            <a class="item__img item__img--book" href="{{url:book2}}" target="_blank" rel="noopener"><img src="{{root}}assets/TorahRediscovered.jpg" width="333" height="499" alt="{{b2_alt}}" loading="lazy"></a>
+            <h2>{{b2_title}}</h2>
+            <p class="meta">{{b2_meta}}</p>
+            <p>{{b2_text}}</p>
+            <a class="rule" href="{{url:book2}}" target="_blank" rel="noopener">{{order}}<span class="sr">{{newtab}}</span></a>
+          </article>
+          <article class="item">
+            <a class="item__img item__img--book" href="{{url:book3}}" target="_blank" rel="noopener"><img src="{{root}}assets/takehold.jpg" width="333" height="499" alt="{{b3_alt}}" loading="lazy"></a>
+            <h2>{{b3_title}}</h2>
+            <p class="meta">{{b3_meta}}</p>
+            <p>{{b3_text}}</p>
+            <a class="rule" href="{{url:book3}}" target="_blank" rel="noopener">{{order}}<span class="sr">{{newtab}}</span></a>
+          </article>
+        </div>
+        <p class="all"><a href="{{url:books}}" target="_blank" rel="noopener">{{books_all}}<span class="sr">{{newtab}}</span></a></p>
+      </div>
+    </section>
+
+    <section class="reading reading--white" id="about">
+      <div class="wrap">
+        <div class="row">
+          <h2>{{about_title}}</h2>
+          <div class="body body--large">
+            <p><strong>{{hero_welcome}}</strong> {{about_p1}}</p>
+            <p>{{about_p2}}</p>
+          </div>
+        </div>
+        <div class="row" id="mission">
+          <h2>{{mission_title}}</h2>
+          <div class="body">
+            <p>{{mission_intro}}</p>
+            <ul>
+              <li>{{mission_1}}</li>
+              <li>{{mission_2}}</li>
+              <li>{{mission_3}}</li>
+              <li>{{mission_4}}</li>
+              <li>{{mission_5}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="wrap cta__inner">
+        <h2>{{cta_title}}</h2>
+        <p class="hero__actions">
+          <a class="btn btn--light" href="{{url:contact}}" target="_blank" rel="noopener">{{cta_contact}}<span class="sr">{{newtab}}</span></a>
+          <a class="btn btn--outline" href="{{url:donate}}" target="_blank" rel="noopener">{{cta_donate}}<span class="sr">{{newtab}}</span></a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <small>{{footer_copy}}</small>
+      <small>{{footer_source}}</small>
+    </div>
+  </footer>
+
+  <script src="{{root}}script.js"></script>
+</body>
+</html>
