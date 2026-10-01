@@ -54,7 +54,8 @@ const en = locales[DEFAULT];
 
 const outPath = (code) => (code === DEFAULT ? 'index.html' : `${code}/index.html`);
 const rootOf = (code) => (code === DEFAULT ? '' : '../');
-const hrefTo = (from, to) => (to === DEFAULT ? (from === DEFAULT ? './' : '../') : `${rootOf(from)}${to}/`);
+// Explicit index.html so the links also work when the files are opened directly (file://) or on any static host.
+const hrefTo = (from, to) => `${rootOf(from)}${outPath(to)}`;
 
 function render(lang) {
   const dict = locales[lang.code];
